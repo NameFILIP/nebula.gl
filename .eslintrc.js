@@ -40,7 +40,9 @@ module.exports = {
     'func-style': 'off',
 
     /* Use the 'query-string' module instead */
-    'no-restricted-imports': ['error', 'querystring']
+    'no-restricted-imports': ['error', 'querystring'],
+    
+    'no-unused-vars': ['error', { 'ignoreRestSiblings': true }]
   },
   globals: {
     Buffer: true
